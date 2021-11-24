@@ -1,0 +1,63 @@
+{
+  "unknownKey": "[ข้อความที่ไม่ได้แปล]", // The return when a string does not have a proper translation for the message yet
+
+  // Page titles
+  "mainTitle": "Payload Guest", // The title on the main screen
+  "creditsTitle": "เครดิต",    // The title on the credits screen
+
+  // Loading ticks
+  "loadingTick1": "กำลังโหลด.",   // Used when refreshing the payloads will used tick1, then 2, then 3, repeating
+  "loadingTick2": "กำลังโหลด..",  // Used when refreshing the payloads will used tick1, then 2, then 3, repeating
+  "loadingTick3": "กำลังโหลด...", // Used when refreshing the payloads will used tick1, then 2, then 3, repeating
+
+  // Button Labels
+  "ok": "ตกลง",           // The "Ok" button prompt to close errors
+  "select": "เลือก",   // The "Select" button prompt to use on the main screen for the cross button
+  "refresh": "รีเฟรช", // The "Refresh" button prompt to use on the main screen for the square button
+  "credits": "เครดิต", // The "Credits" button prompt to use on the main screen for the triangle button
+  "return": "ย้อนกลับ",   // The "Return" button prompt to use on the credits screen for the the circle button
+
+  // Page indicator
+  "pageIndicator": "หน้า %i / %i", // Used for page numbering... the first %i used will be the current page, the second %i will be the total number of pages... if you're language needs this reversed make it known
+
+  // Fatal Errors when starting the application
+  "errorFatal": "พบข้อผิดพลาดร้ายแรง!",                             // Title of the fatal error screen
+  "errorCloseApplication": "โปรดปิดแอปพลิเคชัน", // Notice for the user to close the application due to a fatal error
+  "errorLoadLibjbc": "โหลดข้อมูล libjbc.prx ไม่ได้",           // Error if PRX file could not be loaded
+  "errorInitializeLibjbc": "ไม่สามารถเริ่ม libjbc",   // Error is functions from the PRX could not be initialized
+  "errorJailbreak": "เจลเบรคล้มเหลว",                  // Error if jailbreaking failed
+
+  // General usage for error messages
+  "errorPathOutput": "เส้นทาง: %s",     // %s represents the path to the file with the error
+  "errorIndexOutput": "ลำดับที่: #%zu", // %zu represents the index number of the metadata with an issue
+  "errorHexOutput": "ข้อผิดพลาด: 0x%08x", // 0x%08x represents the hex value for the specific error
+
+  // Errors when parsing "meta.json"
+  "errorMetadata": "Metadata Error",                           // The "header" to get used for metadata errors
+  "errorMetadataRead": "ไม่สามารถอ่านไฟล์ `meta.json`",           // If the meta.json file could not be opened/read
+  "errorMetadataMalformed": "รูปแบบไฟล์ไม่ถูกต้อง `meta.json`",           // If the meta.json file could not be parsed correctly
+  "errorMetadataMissingName": "โปรดระบุชื่อ payload",          // If a meta entry does not have a "name" attribute
+  "errorMetadataMissingFilename": "โปรดระบุชื่อไฟล์ payload",  // If a meta entry does not have a "filename" attribute
+  "errorMetadataNullName": "ไม่ระบุชื่อ payload",                // If a meta entry's "name" attribute is a NULL value
+  "errorMetadataMissingPayloadFile": "ไม่พบไฟล์ payload", // If a meta entry's "filename" attribute file is not at the specified location
+
+  // Post parsing errors
+  "errorNoPayloads": "ไม่พบ payloads ที่ใช้งานได้ :(", // The error displayed when there are no available payloads
+
+  // Errors when sending payloads
+  "errorSendPayloadOpen": "เปิดไฟล์ payload ไม่ได้",              // If the "SendPayload" function fails to open the payload file
+  "errorSendPayloadBuffer": "จัดสรรบัฟเฟอร์ให้ payload ไม่ได้", // If allocating the memory to store the payload fails
+  "errorSendPayloadRead": "อ่านข้อมูล payload ในบัฟเฟอร์ไม่ได้",  // If reading the payload into the allocated memory fails
+  "errorSendPayloadCreateSocket": "สร้าง socket ไม่ได้",     // If creating the socket file descriptor fails
+  "errorSendPayloadConnect": "เชื่อมต่อกับเซิร์ฟเวอร์ไม่ได้",      // If trying to connect to the server fails (Likely no response)
+  "errorSendPayloadSend": "ส่ง payload ไม่ได้",              // If it can connect but sending the payload fails
+
+  // Errors when launching payloads
+  "errorShellcodeOpen": "มีปัญหาในการเปิด: %s",             // Error when unable to open/read a payload file for launching, %s represents the path to the payload file that was attempted
+  "errorShellcodeMmap": "มีปัญหาในการ mmap payload",         // Error when unable to mmap space
+  "errorShellcodeMprotect": "มีปัญหาในการ mprotect payload", // Error when unable to mprotect the mmap'd space
+  "errorShellcodeMunmap": "พบข้อผิดพลาดใน munmap payload",     // Error when unable to munmap the mmap'd space
+
+  // Credits text
+  "creditsText": "overtune"         // The actual credits displayed on the credits page... this may just get baked into the code
+}
